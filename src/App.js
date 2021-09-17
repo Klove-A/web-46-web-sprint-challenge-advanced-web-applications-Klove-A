@@ -13,7 +13,6 @@ function App() {
           <a data-testid="logoutButton" href="#">logout</a>
         </header>
         <Switch>
-          {/* <PrivateRoute path="/protected" component={BubblePage}/> */}
           <Route path="/login" component={Login} />
           <Route path="/" component={Login} />
         </Switch>
