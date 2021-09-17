@@ -9,9 +9,11 @@ const BubblePage = () => {
   const [colors, setColors] = useState([]);
   const [editing, setEditing] = useState(false);
 
-  useEffect(async () => {
-    const newColors = await fetchColorService()
-    setColors(newColors)
+  useEffect(() => {
+    (async () => {
+      const newColors = await fetchColorService();
+      setColors(newColors)
+    })();
   }, []);
 
   const toggleEdit = (value) => {
