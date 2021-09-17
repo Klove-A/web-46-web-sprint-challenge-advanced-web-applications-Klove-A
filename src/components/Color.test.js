@@ -15,5 +15,4 @@ test("Executes handleDelete and toggleEdit property when the 'x' icon is clicked
 });
 
 test("Executes setEditColor and toggleEdit property when color div is clicked", () => {
-    
 });
